@@ -4,6 +4,7 @@
 
 .products-show {
   margin-bottom: 5em;
+
   .page-header {
     margin-top: 1em;
     margin-bottom: 4em;
@@ -12,6 +13,7 @@
       font-size: 1em;
       color: rgba(0, 130, 29, 0.7);
     }
+
     a {
       color: rgba(0, 130, 29, 1);
     }
@@ -25,14 +27,17 @@
     @media screen and (max-width: 1000px) {
       grid-template-columns: 1fr;
     }
+
     div {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      & > p {
+
+      &>p {
         margin-bottom: auto;
       }
     }
+
     img {
       width: 100%;
       height: auto;
@@ -51,9 +56,11 @@
         height: auto;
       }
     }
+
     p {
       text-align: justify;
     }
+
     .quantity,
     .price {
       display: flex;
@@ -63,6 +70,7 @@
       text-align: right;
       font-weight: 700;
     }
+
     button {
       width: 140px;
       font-size: 1em;
@@ -72,6 +80,7 @@
       color: white;
       font-weight: 700;
     }
+
     .soldout {
       width: 140px;
       margin: 1em 0;
@@ -89,3 +98,4 @@
     }
   }
 }
+

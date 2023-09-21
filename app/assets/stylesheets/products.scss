@@ -18,6 +18,7 @@ main section.categories-show {
     @media screen and (max-width: 1000px) {
       grid-template-columns: 1fr;
     }
+
     article {
       .soldout {
         min-width: 110px;
@@ -28,23 +29,27 @@ main section.categories-show {
         padding: 0.375rem 0.75rem;
         font-size: 1rem;
         border-radius: 0.25rem;
+        padding-left: 18px
       }
 
       a {
         text-decoration: none;
       }
+
       font-family: "Montserrat";
       width: 100%;
       position: relative;
       text-align: center;
       border-radius: 0.25em;
       border: 0.1em solid rgba(0, 130, 29, 0.3);
-      box-shadow: rgba(0, 130, 29, 0.16) 0px 3px 6px, rgba(0, 130, 29, 0.23) 0px 3px 6px;
+      box-shadow: rgba(0, 130, 29, 0.16) 0px 3px 6px,
+      rgba(0, 130, 29, 0.23) 0px 3px 6px;
       // transition: opacity 300ms linear;
 
       &:hover {
         transition: all 150ms linear;
         background-color: rgba(0, 130, 29, 0.7);
+
         h1 {
           color: white;
         }
@@ -54,6 +59,7 @@ main section.categories-show {
           color: rgba(0, 130, 29, 0.7);
         }
       }
+
       img {
         width: 100%;
         height: auto;
@@ -61,6 +67,7 @@ main section.categories-show {
         border-top-left-radius: 0.25em;
         border-top-right-radius: 0.25em;
       }
+
       h1 {
         margin: 0;
         padding: 0.25em;
@@ -70,21 +77,26 @@ main section.categories-show {
         color: rgba(0, 130, 29, 0.7);
         font-weight: 700;
         font-family: "Montserrat";
+
         span {
           font-size: 0.8em;
         }
+
         span:last-of-type {
           font-size: 0.5em;
         }
       }
+
       div {
         display: flex;
         justify-content: space-between;
         padding: 0.5em;
+
         form {
           display: inline-block;
           margin-left: auto;
         }
+
         button {
           min-width: 110px;
           padding-left: 1em;
@@ -92,6 +104,7 @@ main section.categories-show {
           background-color: rgba(0, 130, 29, 0.7);
           color: white;
         }
+
       }
     }
   }
