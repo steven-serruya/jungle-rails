@@ -43,6 +43,11 @@
         </li> %>
       </ul>
       <ul class="navbar-nav">
+      <% if current_user %> <!-- Check if user is logged in -->
+      <li class="nav-item">
+        <span class="nav-link">Logged in as: <%= current_user.email %></span>
+      </li>
+    <% end %>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"

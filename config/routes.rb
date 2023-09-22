@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get 'about', to: 'about#index'
   root to: 'products#index'
 
@@ -7,18 +6,24 @@ Rails.application.routes.draw do
   resources :categories, only: [:show]
 
   resource :cart, only: [:show] do
-    post   :add_item
-    post   :remove_item
+    post :add_item
+    post :remove_item
   end
 
   resources :orders, only: [:create, :show]
+  resources :users, only: [:new, :create]
+  # User authentication routes
+  get '/signup', to: 'users#new', as: 'signup'
+  post '/signup', to: 'users#create'
+  get '/login', to: 'sessions#new', as: 'login'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy', as: 'logout'
 
   namespace :admin do
-    resources :categories, only: [:index, :new, :create] # Add this line for category routes
+    resources :categories, only: [:index, :new, :create]
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
   end
-  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
