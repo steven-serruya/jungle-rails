@@ -21,8 +21,8 @@
       <tbody>
         <% @order.line_items.each do |line_item| %>
           <tr>
-          <td><%= image_tag line_item.product.image.url, alt: line_item.product.name %></td>
-          <td><%= line_item.product.name %></td>
+            <td><%= image_tag line_item.product.image.url, alt: line_item.product.name, class:"image-icon"%></td>
+            <td><%= line_item.product.name %></td>
             <td><%= line_item.product.description %></td>
             <td><%= line_item.quantity %></td>
             <td>$<%= line_item.item_price_cents / 100.0 %></td>
