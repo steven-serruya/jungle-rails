@@ -18,12 +18,14 @@ body {
   font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Montserrat", sans-serif;
 }
+
 // Bootstrap adjustments
 form.button_to {
   display: inline;
@@ -48,6 +50,7 @@ form.button_to {
     nav {
       display: none;
     }
+
     .title {
       display: none;
     }
@@ -73,16 +76,19 @@ form.button_to {
     margin: 0;
     font-weight: 700;
   }
+
   h1 {
     line-height: 0.7;
     font-weight: 900;
     font-size: 6.5em;
     font-style: italic;
   }
+
   h2 {
     margin-top: 0.7em;
     font-size: 2.2em;
   }
+
   h3 {
     font-style: italic;
     text-align: right;
@@ -108,6 +114,13 @@ form.button_to {
 .page-header {
   margin: 3em 0;
 }
+
 .text-danger {
   color: #f38792 !important;
+}
+
+
+.about-us {
+  margin-top: 3rem;
+  padding: auto;
 }
