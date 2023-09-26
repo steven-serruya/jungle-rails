@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
   validates :email, presence: true, uniqueness: { case_sensitive: false }
-  validates :password, length: { minimum: 8 }, if: :password_present?
+  validates :password, length: { minimum: 8 }
 
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -26,3 +26,9 @@ end
   
 
 end
+
+# class User < ApplicationRecord
+#   has_secure_password
+#   validates :email, presence: true, uniqueness: true
+
+# end

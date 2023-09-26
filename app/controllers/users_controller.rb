@@ -9,6 +9,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path, notice: "Successfully registered!"
     else
+      puts "++++++++++ failed to register"
       render :new
     end
   end
